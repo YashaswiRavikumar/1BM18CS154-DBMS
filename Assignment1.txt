@@ -43,5 +43,18 @@ FOREIGN KEY(REPORT_NO) REFERENCES ACCIDENT1(REPORT_NO) ON
 DELETE CASCADE
 );
 
+insert into participated1 values('&driver_id',&reg_no,'&report_no',&damage_amt);
+update participated1 set damage_amt=2500 where reg_no=102 and driver_id='1bm088';
+select * from accident1 where acc_date like '__-__-02';
+select * from Accident1 A,participated P,Car C
+    where C.CAR_MODEL='model1'
+    and   C.reg_no=P.reg_no
+    and   P.report_no=A.report_no;
+select * from yashaswi;
+select * from yashaswicar;
+select * from accident1;
+select * from owner1;
+select * from PARTICIPATED1;
+
 
 
